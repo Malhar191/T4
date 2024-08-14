@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - T4</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        .navbar {
+            background-color: #f4f7f6; /* Same as background color */
+            padding: 15px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: #333;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            padding: 10px 15px;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #004d4d; /* Optional hover color */
+        }
+
+        .navbar a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #ff9933;
+            transition: width 0.3s;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            background-image: url('https://www.example.com/header-background.jpg'); /* Replace with an actual image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+
+        header p {
+            font-size: 22px;
+            margin-top: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-category {
+            margin-bottom: 50px;
+        }
+
+        .product-category h2 {
+            color: #004d4d;
+            font-size: 30px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #ff9933;
+            display: inline-block;
+        }
+
+        .product-block {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 15px 0;
+            transition: transform 0.3s;
+        }
+
+        .product-block:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-block img {
+            width: 100%;
+            max-width: 300px; /* Increased the max width */
+            height: auto;
+            border-radius: 10px;
+            margin-right: 30px; /* Added space between image and text */
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 2px solid #ff9933;
+        }
+
+        .product-block p {
+            font-size: 18px; /* Increased font size */
+            line-height: 1.7;
+        }
+
+        footer {
+            background-color: #004d4d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="index.html">Job Openings</a>
+        <a href="support.html">Support</a>
+        <a href="products.html">Products</a>
+        <a href="blog.html">Blogs</a>
+    </div>
+    
+    <header>
+        <h1>Discover Our Premium Products</h1>
+        <p>Crafted with care, designed for your life.</p>
+    </header>
+
+    <main>
+        <section class="product-category" id="personal-care">
+            <h2>Personal Care</h2>
+            <div class="product-block">
+                <img src="imgs/P1.jpg" alt="Hair Care Bottle"> <!-- Replace with actual image URL -->
+                <p>Our premium hair care bottle is designed to nourish and strengthen your hair. Infused with natural ingredients, this product helps restore shine and manageability while protecting your hair from damage. Perfect for daily use, it suits all hair types and leaves your hair feeling soft, smooth, and healthy.</p>
+            </div>
+            <div class="product-block">
+                <img src="imgs/P4.jpg" alt="Hair Care Bag"> <!-- Replace with actual image URL -->
+                <p>Our hair care bag offers a convenient solution for storing and organizing your hair care essentials. Made from durable materials, this bag is perfect for travel or at-home use. It features multiple compartments to keep your shampoo, conditioner, brushes, and accessories neatly organized and easily accessible.</p>
+            </div>
+        </section>
+    
+            <section class="product-category" id="household-essentials">
+                <h2>Snacks</h2>
+                <div class="product-block">
+                    <img src="imgs/P2.jpg" alt="Crispy Potato Chips">
+                    <p>Indulge in the irresistible crunch of our classic potato chips. Seasoned to perfection with a hint of sea salt, these chips are the perfect snack for any occasion.</p>
+                </div>
+                <div class="product-block">
+                    <img src="imgs/P3.jpg" alt="Chocolate Chip Cookies">
+                    <p>Satisfy your sweet tooth with our chewy chocolate chip cookies. Packed with real chocolate chunks, these cookies are baked to golden perfection.</p>
+                </div>
+            </section>
+            
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 T4. All rights reserved.</p>
+    </footer>
+</body>
+</html>
