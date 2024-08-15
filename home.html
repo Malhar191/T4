@@ -11,42 +11,57 @@
             scroll-behavior: smooth;
         }
 
- /* Card styling */
-.info-cards, .about-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* For even spacing between cards */
-    margin: 20px 0;
-}
+        /* Section styling for info-cards */
+        .info-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #e0e0e0; /* Light grey background for info-cards */
+            border-radius: 10px;
+        }
 
-.card {
-    flex: 0 0 calc(50% - 10px); /* Two cards per row with small gap */
-    padding: 40px;
-    margin-bottom: 20px; /* Space between rows */
-    background-color: #f0f0f0;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    text-decoration: none;
-    color: inherit;
-}
+        /* Section styling for about-cards with lavender background */
+        .about-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: lavender; /* Lavender background for about-cards */
+            border-radius: 10px;
+        }
 
-.card h2 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-}
+        /* Card styling */
+        .card {
+            flex: 0 0 100%; /* Full width for one card per row */
+            padding: 50px;
+            margin-bottom: 20px; /* Space between rows */
+            background-color: #ffffff; /* Card background color */
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
 
-.card p {
-    font-size: 1em;
-    color: #555;
-    text-align: left; /* Align text to the left */
-}
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
 
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+        .card p {
+            font-size: 1em;
+            color: #555;
+            text-align: left; /* Align text to the left */
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
@@ -75,6 +90,8 @@
         <h2>Immerse Yourself in Our World</h2>
         <p>The stories below are just a sample of what working at T4 can look like. Get your first glimpse at our open culture, world-renowned workspaces, and successful career programs.</p>
     </section>
+
+    <!-- Info Cards Section -->
     <section class="info-cards">
         <a href="life.html" class="card">
             <h2>Life at T4</h2>
