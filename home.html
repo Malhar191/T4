@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Smooth scrolling for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+ /* Card styling */
+.info-cards, .about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* For even spacing between cards */
+    margin: 20px 0;
+}
+
+.card {
+    flex: 0 0 calc(50% - 10px); /* Two cards per row with small gap */
+    padding: 40px;
+    margin-bottom: 20px; /* Space between rows */
+    background-color: #f0f0f0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.card p {
+    font-size: 1em;
+    color: #555;
+    text-align: left; /* Align text to the left */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+    </style>
 </head>
 <body>
     <header class="home-header">
@@ -15,7 +58,6 @@
                 <li><a href="support.html">Support</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="blog.html">Blogs</a></li>
-                
             </ul>
         </nav>
     </header>
@@ -23,7 +65,7 @@
         <section class="video-section">
             <video src="video/BGV.mp4" autoplay muted loop class="background-video"></video>
             <div class="overlay-text">
-                <h1>Welcome to T4</h1>
+                <h1>Welcome to Our Company</h1>
                 <p>Discover more about us and explore our opportunities.</p>
                 <a href="index.html" class="cta-button">Explore Careers</a>
             </div>
@@ -47,5 +89,34 @@
             <p>Get assistance and support for your inquiries.</p>
         </a>
     </section>
+
+    <!-- About Us Section with Cards -->
+    <section class="about-cards">
+        <div class="card">
+            <h2>About Us</h2>
+            <p>Welcome to T4, where we blend innovation, quality, and style to create products that elevate your daily routine. Our diverse range of products—from premium hair care solutions to indulgent snacks—reflects our commitment to excellence and customer satisfaction.</p>
+        </div>
+        <div class="card">
+            <h2>Our Vision</h2>
+            <p>At T4, our vision is simple: to enhance your lifestyle with products that are as functional as they are stylish. We believe that the little things in life, like a nourishing hair care bottle or a perfectly crunchy potato chip, can make a big difference. That's why we pour our creativity and expertise into everything we do, ensuring that every product we offer is of the highest quality.</p>
+        </div>
+        <div class="card">
+            <h2>Our Products</h2>
+            <p>Our product line is a reflection of our dedication to variety and excellence. From our <strong>Premium Hair Care Bottle</strong> designed to nourish and strengthen your hair with natural ingredients, to our <strong>Crispy Potato Chips</strong>, seasoned with just the right amount of sea salt for that perfect crunch, and our <strong>Chocolate Chip Cookies</strong>, packed with real chocolate chunks and baked to golden perfection, we aim to make your beauty routine effortless and enjoyable.</p>
+        </div>
+        <div class="card">
+            <h2>Our Team</h2>
+            <p>Behind every T4 product is a team of dedicated professionals who share a passion for quality and creativity. From our designers and product developers to our customer service team, everyone at T4 is committed to ensuring that our products meet the highest standards of excellence.</p>
+        </div>
+        <div class="card">
+            <h2>Why Choose T4?</h2>
+            <p>Choosing T4 means choosing a lifestyle of quality, convenience, and a touch of luxury. Our range of products is carefully curated to enhance your daily life, whether you're nourishing your hair or indulging in a delicious snack. We take pride in offering products that you'll love and rely on every day.</p>
+        </div>
+        <div class="card">
+            <h2>Founder's Office</h2>
+            <p>Dear Valued Customers, Welcome to T4, where we believe that the everyday should be extraordinary. Our <strong>Premium Hair Care Bottle</strong> and <strong>Hair Care Bag</strong> were designed to make your beauty routine both luxurious and effortless, while our <strong>Crispy Potato Chips</strong> and <strong>Chocolate Chip Cookies</strong> provide a delightful break in your day.</p>
+        </div>
+    </section>
+
 </body>
 </html>
