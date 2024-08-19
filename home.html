@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,27 +19,29 @@
             justify-content: space-between;
             margin: 20px 0;
             padding: 20px;
-            background-color: #e0e0e0; /* Light grey background for info-cards */
+            background-color: #e0e0e0;
             border-radius: 10px;
         }
 
-        /* Section styling for about-cards with lavender background */
+        /* Section styling for about-cards with background image */
         .about-cards {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin: 20px 0;
-            padding: 20px;
-            background-color: lavender; /* Lavender background for about-cards */
+            padding: 100px;
+            background-image: url('home.jpg');
+            background-size: 50%;
+            background-position: center;
             border-radius: 10px;
         }
 
         /* Card styling */
         .card {
-            flex: 0 0 100%; /* Full width for one card per row */
-            padding: 50px;
-            margin-bottom: 20px; /* Space between rows */
-            background-color: #ffffff; /* Card background color */
+            flex: 1 1 48%;
+            padding: 30px;
+            margin: 10px 0;
+            background-color: #ffffff;
             text-align: center;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,15 +58,39 @@
         .card p {
             font-size: 1em;
             color: #555;
-            text-align: left; /* Align text to the left */
+            text-align: left;
         }
 
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
+
+        /* Special styling for the Founder's Office card */
+        .founder-card {
+            display: flex;
+            align-items: center;
+            padding: 30px;
+            background-color: #ffffff;
+            text-align: left;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .founder-card img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+
+        .founder-card-content {
+            flex: 1;
+        }
     </style>
 </head>
+
 <body>
     <header class="home-header">
         <nav>
@@ -80,9 +107,8 @@
         <section class="video-section">
             <video src="video/BGV.mp4" autoplay muted loop class="background-video"></video>
             <div class="overlay-text">
-                <h1>Welcome to Our Company</h1>
-                <p>Discover more about us and explore our opportunities.</p>
-                <a href="index.html" class="cta-button">Explore Careers</a>
+                <h1>Welcome to Our T4</h1>
+                
             </div>
         </section>
     </main>
@@ -107,8 +133,7 @@
         </a>
     </section>
 
-    <!-- About Us Section with Cards -->
-    <section class="about-cards">
+    <section class="about-cards" style="background-image: url('imgs/home.jpg.jpg'); background-size: cover; background-position: center center;">
         <div class="card">
             <h2>About Us</h2>
             <p>Welcome to T4, where we blend innovation, quality, and style to create products that elevate your daily routine. Our diverse range of products—from premium hair care solutions to indulgent snacks—reflects our commitment to excellence and customer satisfaction.</p>
@@ -121,19 +146,34 @@
             <h2>Our Products</h2>
             <p>Our product line is a reflection of our dedication to variety and excellence. From our <strong>Premium Hair Care Bottle</strong> designed to nourish and strengthen your hair with natural ingredients, to our <strong>Crispy Potato Chips</strong>, seasoned with just the right amount of sea salt for that perfect crunch, and our <strong>Chocolate Chip Cookies</strong>, packed with real chocolate chunks and baked to golden perfection, we aim to make your beauty routine effortless and enjoyable.</p>
         </div>
-        <div class="card">
-            <h2>Our Team</h2>
-            <p>Behind every T4 product is a team of dedicated professionals who share a passion for quality and creativity. From our designers and product developers to our customer service team, everyone at T4 is committed to ensuring that our products meet the highest standards of excellence.</p>
-        </div>
-        <div class="card">
-            <h2>Why Choose T4?</h2>
-            <p>Choosing T4 means choosing a lifestyle of quality, convenience, and a touch of luxury. Our range of products is carefully curated to enhance your daily life, whether you're nourishing your hair or indulging in a delicious snack. We take pride in offering products that you'll love and rely on every day.</p>
-        </div>
-        <div class="card">
+
+    </section>
+
+    <!-- Founder's Office Section -->
+    <div class="founder-card">
+        <img src="head.jpg" alt="Founder's Image">
+        <div class="founder-card-content">
             <h2>Founder's Office</h2>
             <p>Dear Valued Customers, Welcome to T4, where we believe that the everyday should be extraordinary. Our <strong>Premium Hair Care Bottle</strong> and <strong>Hair Care Bag</strong> were designed to make your beauty routine both luxurious and effortless, while our <strong>Crispy Potato Chips</strong> and <strong>Chocolate Chip Cookies</strong> provide a delightful break in your day.</p>
         </div>
-    </section>
 
+        
+    </div>
+    <div class="founder-card">
+        <h2>Our Team</h2>
+        <p>Behind every T4 product is a team of dedicated professionals who share a passion for quality and creativity. From our designers and product developers to our customer service team, everyone at T4 is committed to ensuring that our products meet the highest standards of excellence.</p>
+    </div>
+    <div class="founder-card">
+        <h2>Why Choose T4?</h2>
+        <p>Choosing T4 means choosing a lifestyle of quality, convenience, and a touch of luxury. Our range of products is carefully curated to enhance your daily life, whether you're nourishing your hair or indulging in a delicious snack. We take pride in offering products that you'll love and rely on every day.</p>
+    </div>
+    <div class="founder-card">
+        <h1>Discover more about us and explore our opportunities.</h1>
+    
+        <div class="button-container">
+            <a href="index.html" class="cta-button">Explore Careers</a>
+        </div>
+    </div>
 </body>
+
 </html>
