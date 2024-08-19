@@ -307,25 +307,25 @@ footer {
     top: 0;
     z-index: 10; /* Ensure the navbar is above the video */
 }
-/* Button Styling */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: black; /* Black background */
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 20px; /* Space above the button */
+.button-container {
+     /* Increase the distance from the left side */
+    /* or you can use margin-left */
+    margin-left: 100px;
 }
 
-/* Button Hover Effect */
-.cta-button:hover {
-    background-color: #333; /* Slightly lighter black on hover */
-    color: #ffffff; /* Keep text color white on hover */
+.cta-button {
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: black; /* Adjust the button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
+
+.cta-button:hover {
+    background-color: grey; /* Change the button color on hover */
+}
+
 /* Info Cards Section */
 .info-cards {
     display: flex;
